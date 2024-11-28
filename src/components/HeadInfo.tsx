@@ -11,7 +11,7 @@ const HeadInfo = ({
       <title>{title}</title>
       <script
                   async
-                  src={`https://www.googletagmanager.com/gtag/js?id=G-HKZ6H2MZMN`}
+                  src={`https://www.googletagmanager.com/gtag/js?id=G-6KE37QNQ4C`}
       />
       <script
           dangerouslySetInnerHTML={{
@@ -19,7 +19,7 @@ const HeadInfo = ({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-HKZ6H2MZMN');
+              gtag('config', 'G-6KE37QNQ4C');
             `,
           }}
       />     
