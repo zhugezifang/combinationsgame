@@ -27,7 +27,8 @@ export default function Footer({
                 className="h-10"
                 src="/favicon.svg"
                 width={32}
-                height={32}               
+                height={32}       
+                alt="Combinations Game"        
               />
             </a>
             <p className="text-sm ">

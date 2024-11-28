@@ -13,6 +13,7 @@ const PageComponent = ({
 
   return (
     <>
+      <head>Combinations Game Terms and Conditions</head>
       <h1>Terms and Conditions</h1>
 <p>Last updated: November 28, 2024</p>
 <p>Please read these terms and conditions carefully before using Our Service.</p>
