@@ -113,7 +113,7 @@ const PageComponent = ({
             </div>
 
             <div
-                className={"w-[90%] mx-auto mb-8 border-[2px] border-gray-200 object-fill"}>
+                className={"w-[100%] mx-auto mb-8 border-[2px] border-gray-200 object-fill"}>
                 <ImageSplitter locale={locale} indexLanguageText={indexLanguageText}/>
             </div>
 
