@@ -9,6 +9,20 @@ const HeadInfo = ({
   return (
     <>
       <title>{title}</title>
+      <script
+                  async
+                  src={`https://www.googletagmanager.com/gtag/js?id=G-HKZ6H2MZMN`}
+      />
+      <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-HKZ6H2MZMN');
+            `,
+          }}
+      />     
       <meta name="google-adsense-account" content="ca-pub-4158779929727637"/>
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4158779929727637"
       crossOrigin="anonymous"></script> 

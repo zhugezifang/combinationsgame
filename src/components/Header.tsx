@@ -50,16 +50,16 @@ export default function Header({
   }
 
   return (
-    <header className="sticky top-0 bg-[#276ef1] z-20 w-full">
+    <header className="sticky bg-[#276ef1] z-20 w-full">
       <LoadingModal loadingText={indexLanguageText.loadingText}/>
       <GeneratingModal generatingText={indexLanguageText.generateText}/>
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href={`/${locale}`} className="-m-1.5 p-1.5" onClick={() => setShowLoadingModal(true)}>
-            <Image className="h-8 w-auto" src="/favicon.svg" alt="Perfect Tidy" width={32} height={32}/>
+            <Image className="h-8 w-auto" src="/favicon.svg" alt="Combinations" width={32} height={32}/>
           </a>
           <a href={`/${locale}`} className="-m-1.5 ml-0.5 p-1.5" onClick={() => setShowLoadingModal(true)}>
-            <span className="font-bold text-white text-2xl">Perfect Tidy</span>
+            <span className="font-bold text-white text-2xl">Combinations</span>
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -73,21 +73,15 @@ export default function Header({
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          
+          {/*
             <a
               key={navMenuText.name2}
-              href={`/${locale}${navMenuText.href2}`}
+              href={navMenuText.href2}
               onClick={() => setShowLoadingModal(true)}
               className="text-sm font-semibold leading-6 text-white ">
               {navMenuText.name2}
             </a>
-            <a
-              key={navMenuText.name3}
-              href={`/${locale}${navMenuText.href3}`}
-              onClick={() => setShowLoadingModal(true)}
-              className="text-sm font-semibold leading-6 text-white ">
-              {navMenuText.name3}
-            </a>
+          */}
         </div>
         <div className="flex flex-1 justify-end mr-2">
           {navigation.social.map((item) => (
@@ -147,7 +141,7 @@ export default function Header({
           className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href={`/${locale}`} className="-m-1.5 p-1.5" onClick={() => setShowLoadingModal(true)}>
-              <Image className="h-8 w-auto" src="/favicon.svg" alt="Perfect Tidy" width={32} height={32}/>
+              <Image className="h-8 w-auto" src="/favicon.svg" alt="Combinations" width={32} height={32}/>
             </a>
             <a href={`/${locale}`} className="-m-1.5 ml-0.5 p-1.5" onClick={() => setShowLoadingModal(true)}>
               <Image
@@ -155,7 +149,7 @@ export default function Header({
                 src="/favicon.svg"
                 width={32}
                 height={24}
-                alt="Perfect Tidy"/>
+                alt="Combinations"/>
             </a>
             <button
               type="button"
@@ -169,22 +163,15 @@ export default function Header({
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                
+              {/*
                 <a
                 key={navMenuText.name2}
-                href={`/${locale}${navMenuText.href2}`}
+                href={navMenuText.href2}
                 onClick={() => setShowLoadingModal(true)}
-                className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 ">
+                className="text-sm font-semibold leading-6 text-white ">
                 {navMenuText.name2}
                 </a>
-                <a
-                  key={navMenuText.name3}
-                  href={`/${locale}${navMenuText.href3}`}
-                  onClick={() => setShowLoadingModal(true)}
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 ">
-                  {navMenuText.name3}
-                </a>
-              
+              */}
               </div>
             </div>
           </div>
