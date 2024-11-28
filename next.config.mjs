@@ -3,8 +3,6 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    distDir: 'dist', // 自定义构建目录
-};
+const nextConfig = {};
 
 export default withNextIntl(nextConfig);
